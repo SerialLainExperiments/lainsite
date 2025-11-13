@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serial Experiments Lain Portal - Nickname Temporário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="matrix-effect" id="matrixEffect"></div>
+    <div class="network-animation" id="networkAnimation"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="glitch-effect">WIRED</h1>
+            <p>CONNECT YOURSELF TO THE NETWORK</p>
+            <p>// MESSAGES ARE NOT STORED // ALL FLOWS TO THE VOID //</p>
+        </header>
+        
+        <div id="nickname-section">
+            <form id="nickname-form">
+                <input type="text" id="nickname-input" placeholder="Choose a unique nickname..." required maxlength="20">
+                <button type="submit">SET NICKNAME</button>
+            </form>
+            <p id="nickname-error">This nickname is already in use. Please choose another one.</p>
+        </div>
+        
+        <div id="user-info" style="display: none;">
+            <span>Connected as: <span id="current-nickname"></span></span>
+            <button id="change-nick-btn">CHANGE</button>
+        </div>
+        
+        <nav>
+            <button class="nav-btn active" data-target="home">HOME</button>
+            <button class="nav-btn" data-target="download">DOWNLOAD</button>
+            <button class="nav-btn" data-target="chat">CHAT (TEMPORARY)</button>
+        </nav>
+        
+        <section id="home" class="content-section active">
+            <h2>AND YOU DON'T SEEM TO UNDERSTAND</h2>
+            <p>Welcome to the Wired, a system similar to the Internet. This is a portal dedicated to Serial Experiments Lain.</p>
+            <p>Present day, present time. Hahahahaha.</p>
+            <p>Lain Iwakura, a young girl, receives an email from a classmate who recently died, leading her to discover the Wired.</p>
+            <br>
+            <p>// SYSTEM_STATUS: CONNECTED</p>
+            <p>// USER_ACCESS: GRANTED</p>
+            <p>// MESSAGE_STORAGE: DISABLED</p>
+            <p>// ALL_DATA_FLOWS_TO_VOID: TRUE</p>
+        </section>
+        
+        <section id="download" class="content-section">
+            <h2>DOWNLOAD SECTION</h2>
+            <p>Access files from the Wired. These are permanent.</p>
+            
+            <div class="download-item">
+                <h3>Layer:01 - WEIRD</h3>
+                <p>Episode 1 - Serial Experiments Lain</p>
+                <p>Size: 250MB | Format: MP4</p>
+                <button class="download-btn" data-file="Serial_Experiments_Lain_EP01.mp4">DOWNLOAD</button>
+            </div>
+            
+            <div class="download-item">
+                <h3>Layer:02 - GIRLS</h3>
+                <p>Episode 2 - Serial Experiments Lain</p>
+                <p>Size: 250MB | Format: MP4</p>
+                <button class="download-btn" data-file="Serial_Experiments_Lain_EP02.mp4">DOWNLOAD</button>
+            </div>
+            
+            <div class="download-item">
+                <h3>Layer:03 - PSYCHEDELIC</h3>
+                <p>Episode 3 - Serial Experiments Lain</p>
+                <p>Size: 250MB | Format: MP4</p>
+                <button class="download-btn" data-file="Serial_Experiments_Lain_EP03.mp4">DOWNLOAD</button>
+            </div>
+            
+            <div class="download-item">
+                <h3>Layer:04 - RELIGION</h3>
+                <p>Episode 4 - Serial Experiments Lain</p>
+                <p>Size: 250MB | Format: MP4</p>
+                <button class="download-btn" data-file="Serial_Experiments_Lain_EP04.mp4">DOWNLOAD</button>
+            </div>
+            
+            <div class="download-item">
+                <h3>Serial Experiments Lain OST</h3>
+                <p>Original Soundtrack</p>
+                <p>Size: 120MB | Format: ZIP</p>
+                <button class="download-btn" data-file="Serial_Experiments_Lain_OST.zip">DOWNLOAD</button>
+            </div>
+        </section>
+        
+        <section id="chat" class="content-section">
+            <h2>CHANNEL // WIRED // TEMPORARY</h2>
+            <p>Communicate with others in the network. Messages are not stored and will fade away.</p>
+            <p class="system-msg">// NO MESSAGES ARE SAVED // ALL IS TEMPORARY // FLOW TO THE VOID //</p>
+            
+            <div id="chat-container">
+                <div class="message system-msg">
+                    <span class="timestamp">[SYSTEM]</span>
+                    <span class="text">Welcome to the ephemeral chat. Nothing is saved. All messages will eventually disappear.</span>
+                </div>
+                <div class="message system-msg">
+                    <span class="timestamp">[SYSTEM]</span>
+                    <span class="text">Set a nickname to start chatting. It will be lost when you refresh the page.</span>
+                </div>
+            </div>
+            
+            <div class="typing-indicator" id="typing-indicator">
+                Someone is typing<span>.</span><span>.</span><span>.</span>
+            </div>
+            
+            <div style="margin-top: 10px;">
+                <input type="text" id="message-input" placeholder="Set a nickname first..." disabled>
+                <button id="send-btn" disabled>SEND</button>
+            </div>
+        </section>
+        
+        <footer>
+            <p>PRESENT DAY, PRESENT TIME</p>
+            <p>// SYSTEM_VERSION: 0.9.7</p>
+            <p>// MESSAGE_STORAGE: DISABLED</p>
+            <p>// NICKNAME_PERSISTENCE: SESSION_ONLY</p>
+            <p>// UNIQUE_NICKNAMES: REQUIRED</p>
+            <p>// CONNECTED_TO: THE_WIRED</p>
+        </footer>
+    </div>
+
+    <div class="notification"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
